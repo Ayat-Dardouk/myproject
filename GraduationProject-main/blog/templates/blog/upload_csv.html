@@ -1,0 +1,6 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="csv_files">Upload Files:</label>
+    <input type="file" name="csv_files" id="csv_files" multiple>
+    <button type="submit">Upload and Process</button>
+</form>
